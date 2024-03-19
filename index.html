@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Platos</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="logo">
+                <img src="logo-small.png" alt="Logo" height="50" >
+            </div>
+            <div class="links">
+                <ul class="ulLinks">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Platos">Platos</a></li>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="random">
+            <div id="botonesAleatorio">
+                <button onclick="traerPlatoAleatorio()">Plato Aleatorio</button>
+                <button id="botonFavorito" onclick="agregarFavorito()">Favorito</button>
+            </div>
+                
+            <div id="loader"></div>
+            <div id="platoAleatorio">
+
+            </div>
+            
+        </section>
+        <section id="favoritos">
+            <h1>Favoritos</h1>
+            <ul id="listaFavoritos" class="grid-container">
+                
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
